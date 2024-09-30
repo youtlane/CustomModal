@@ -1,8 +1,8 @@
 import React from 'react';
-import './customModal.css'; // Import styles
+import './customModal.css'; 
 
 const CustomModal = ({ isOpen, onClose, children }) => {
-  if (!isOpen) return null; // If not open, don't render the modal
+  if (!isOpen) return null; 
 
     return (
         <div className="modal-overlay">
@@ -17,6 +17,6 @@ const CustomModal = ({ isOpen, onClose, children }) => {
             </div>
         </div>
     );
-};
+}
 
 export default CustomModal;

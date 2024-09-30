@@ -1,9 +1,9 @@
 {
   "name": "custom-modal-react-hy",
-  "version": "0.1.0",
+  "version": "0.2.6",
   "private": false,
   "description": "A customizable modal component for React.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "keywords": [
     "react",
     "modal",
@@ -11,20 +11,19 @@
     "customModal"
   ],
   "author": "Hanane Youtlane",
+  "license": "MIT",
   "peerDependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build": "babel src --out-dir dist"
+    "build": "babel src --out-dir dist && copy src\\customModal.css dist\\ && babel src\\index.jsx --out-file dist/index.js",
+    "prepublishOnly": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,10 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.25.6",
-    "@babel/preset-env": "^7.25.4",
-    "@babel/preset-react": "^7.24.7"
   }
 }

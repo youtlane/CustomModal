@@ -9,5 +9,5 @@ Object.defineProperty(exports, "CustomModal", {
     return _CustomModal.default;
   }
 });
-var _CustomModal = _interopRequireDefault(require("./CustomModal.jsx"));
+var _CustomModal = _interopRequireDefault(require("./CustomModal.js"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }

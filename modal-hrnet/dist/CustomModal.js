@@ -7,16 +7,13 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 require("./customModal.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
-// Import styles
-
 const CustomModal = _ref => {
   let {
     isOpen,
     onClose,
     children
   } = _ref;
-  if (!isOpen) return null; // If not open, don't render the modal
-
+  if (!isOpen) return null;
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-overlay"
   }, /*#__PURE__*/_react.default.createElement("div", {
